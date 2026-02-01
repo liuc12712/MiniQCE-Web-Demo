@@ -106,6 +106,65 @@ CREATE TABLE messages (
 ```
 4.后端数据库连接配置
 请打开后端主程序文件:backend/app.py，在 第 34 行和第 35 行，根据你的实际数据库配置修改以下内容
+```python
 user = "依据实际更改"
 password = "依据实际更改"
+```
+请确保：
+
+* 用户名与 MySQL 中创建的用户一致
+* 密码正确
+* 数据库服务已正常启动
+
+否则后端将无法正常连接数据库。
+
+---
+
+### MiniQCE 模型与 Ollama 配置
+
+#### 1. 下载 MiniQCE 模型
+
+MiniQCE 模型已计划开源至 Hugging Face，模型文件及对应的 `Modelfile` 将一并提供。
+
+> 模型下载地址：
+> 👉 敬请期待
+
+请下载完成后，将模型文件放置到合适的本地目录。
+
+---
+
+#### 2. 安装 Ollama
+
+Ollama 用于本地大语言模型的管理与推理，可通过以下方式安装：
+
+* 访问 Ollama 官方网站下载对应系统版本
+* Windows / macOS / Linux 均可使用
+
+安装完成后，可通过以下命令确认是否安装成功：
+
+```bash
+ollama --version
+```
+
+---
+
+#### 3. 创建 MiniQCE 模型实例
+
+在包含 `Modelfile` 的目录下执行：
+
+```bash
+ollama create miniqce -f Modelfile
+```
+
+执行完成后，即可在本地通过 Ollama 调用 `miniqce` 模型。
+
+后端服务将通过 Ollama 接口与 MiniQCE 模型进行交互。
+
+---
+
+至此，后端运行环境、数据库以及 MiniQCE 模型的基础配置已完成。
+
+```
+
+---
 
