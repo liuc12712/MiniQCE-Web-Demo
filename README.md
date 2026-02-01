@@ -166,5 +166,3 @@ ollama create miniqce -f Modelfile
 
 ```
 
----
-
