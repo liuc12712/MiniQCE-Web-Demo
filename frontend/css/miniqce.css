@@ -1,0 +1,258 @@
+.li2-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.li2-box-item{
+  overflow: hidden;
+  flex: 0 0 30%;
+  position: relative;
+  /* min-height: 300px; */
+  margin-bottom: 40px;
+  height: 180px;
+}
+.li2-box-item:hover img{
+  transform: scale(1);
+}
+.li2-box-item:hover .boxitem-title{
+  bottom:0px;
+  opacity: 1;
+  transform: scale(1.2);
+}
+.li2-box-item>img{
+  width: 100%;
+  /* height: 100%; */
+  transform: scale(1.1);
+  transition: all .3s ease-in-out;
+}
+.li2-box-item .boxitem-title{
+  position: absolute;
+  bottom:-75px;
+  left:0px;
+  right: 0px;
+  height: 75px;
+  text-align: center;
+  background-color: var(--headerhover);
+  color: var(--headerFont);
+  transition: all .3s ease-in-out;
+  transform: scale(1);
+  font-size: 12px;
+}
+.boxitem-title h6{
+  font-size: 12px;
+  /* display: inline-block; */
+  margin: 15px 0 8px;
+}
+
+.content-li.li1{
+  display: flex;
+  margin-bottom: 24px;
+  justify-content: space-between;
+}
+.content-li.li1>.li1-box {
+  position: relative;
+  flex: 0 0 32%;
+  background-color: var(--headerCOlor);
+  min-height: 150px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+
+.li1-box>span {
+  /* margin-top: 25px; */
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--headerFont);
+  line-height: 20px;
+  display: inline-block;
+}
+
+.li1-box>span.tag{
+  border-radius: 10px;
+  padding: 0px 10px;
+  margin-left: 5px;
+  font-size: 18px;
+  background-color: var(--mainColor);
+}
+
+.li1-box>p {
+  /* text-transform: uppercase; */
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--headerFont);
+  transition: .4s ease-in-out;
+  margin: 0px;
+}
+
+.content {
+  position: relative;
+  top: -90px;
+  min-height: 1000px;
+  width: 70%;
+  margin: 0 auto;
+  flex-direction: column;
+  /* background-color: rgba(10, 15, 20, 0.2); */
+}
+.miniqce-panel {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* 一键介绍按钮 */
+.intro-btn {
+  padding: 14px 36px;
+  font-size: 16px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(87deg,#00283a,#004769);
+  color: #fff;
+  animation: breathe 2s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0% { box-shadow: 0 0 0 rgba(95,156,255,0.4); }
+  50% { box-shadow: 0 0 20px rgba(95,156,255,0.8); }
+  100% { box-shadow: 0 0 0 rgba(95,156,255,0.4); }
+}
+
+/* 输入区 */
+.input-area {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.input-area input {
+  width: 60%;
+  padding: 10px;
+  border-radius: 6px 0 0 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.input-area button {
+  padding: 10px 20px;
+  border: none;
+  background: #00283a;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0 6px 6px 0;
+}
+
+/* 加载提示 */
+.loading-tip {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666;
+}
+
+.loader {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #ccc;
+  border-top: 2px solid #5f9cff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-right: 6px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* 聊天框 */
+.chat-box {
+  margin-top: 20px;
+  text-align: left;
+  padding: 15px;
+  max-height: 300px;
+  overflow-y: auto;
+  border-radius: 8px;
+  background: rgba(0,0,0,0.05);
+}
+
+.chat-item {
+  margin-bottom: 12px;
+}
+
+.chat-item.user {
+  color: #a9f2ff;
+}
+
+.chat-item.ai {
+  color: #ffffff;
+}
+
+/* 聊天整体字号 */
+.chat-box {
+  font-size: 16px;   /* 推荐 16～18px */
+  line-height: 1.7;  /* 提升可读性，非常重要 */
+}
+
+/* 单条消息 */
+.chat-item {
+  font-size: 16px;
+}
+
+/* AI 回复稍微大一点（可选） */
+.chat-item.ai {
+  font-size: 17px;
+}
+
+.chat-content {
+  margin-top: 6px;
+}
+
+.chat-content p {
+  margin: 6px 0;
+}
+
+.chat-content ul {
+  padding-left: 20px;
+  margin: 6px 0;
+}
+
+.chat-content code {
+  background: rgba(0,0,0,0.06);
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: Consolas, monospace;
+}
+
+.chat-content pre {
+  background: rgba(0,0,0,0.08);
+  padding: 10px;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+  /* 手机*/
+  @media screen and (max-width: 550px) {
+	.li1-box {
+    margin-bottom: 12px; /* 你可以改成 16px / 20px */
+  }
+
+  /* 最后一个不要多余间距（可选） */
+  .li1-box:last-child {
+    margin-bottom: 0;
+  }
+    .content-li{
+      display: block;
+	  margin-bottom: 24px;
+    }
+     .li1{
+      display: block !important;
+	  margin-bottom: 24px;
+    }
+    .li2-box-item{
+      flex: 100%;
+      min-height: auto;
+    }
+  }
