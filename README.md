@@ -3,7 +3,7 @@
 本项目的前端部分基于 **wttandroid** 在 Gitee 上开源的前端模板，在此对其开源贡献表示感谢 ❤️  
 
 > 前端模板项目地址：  
-> 👉 （https://gitee.com/wttAndroid）
+> 👉 https://gitee.com/wttAndroid
 
 在原有模板基础上，本项目根据实际需求进行了页面结构调整与功能扩展，使其适配 MiniQCE 模型的本地部署与 Web 交互场景。
 
