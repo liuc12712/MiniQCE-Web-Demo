@@ -1,4 +1,5 @@
 # 在线预览LiuceCN个人网站：http://www.liucelab.cn
+（由于服务器其他服务需要，暂时关闭智能体服务）
 ## 前端介绍（Frontend）
 
 本项目的前端部分基于 **wttandroid** 在 Gitee 上开源的前端模板，在此对其开源贡献表示感谢 ❤️  
@@ -41,19 +42,19 @@
 目前前端中有 **两个页面包含后端 API 请求相关代码**，用于与 Python 后端服务通信：
 
 - **联系页面（Contact）**
-  - 文件路径：
+  文件路径：
     ```
     MiniQCE-Web-Demo/frontend/contact.html
     ```
-  - API 相关代码位置：  
+  API 相关代码位置：  
     **第 335 行**
 
 - **MiniQCE 实验室页面（MiniQCE Lab）**
-  - 文件路径：
+  文件路径：
     ```
     MiniQCE-Web-Demo/frontend/miniqce.html
     ```
-  - API 相关代码位置：  
+  API 相关代码位置：  
     **第 158 行**
 
 ---
