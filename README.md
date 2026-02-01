@@ -63,3 +63,49 @@
 
 ```text
 http://127.0.0.1:5000
+```
+
+## 后端介绍（Backend）
+
+### 环境搭建（推荐 Conda）
+
+本项目后端基于 Python 开发，**强烈推荐使用 Conda** 根据仓库中提供的 `environment.yml` 文件进行一键式环境搭建。
+
+#### 1. 使用 Conda 创建运行环境
+
+在项目根目录或 `backend` 目录下执行：
+
+```bash
+conda env create -f backend/environment.yml
+conda activate PI_web_backend
+```
+
+### 2. MySQL 数据库配置
+
+1. 创建数据库
+```sql
+CREATE DATABASE message_db
+CHARACTER SET utf8mb4;
+```
+
+2.创建数据库用户并授权
+请创建一个专用数据库用户，并仅授权其访问 message_db 数据库（出于安全考虑，不建议使用 root 用户）。
+
+3. 创建留言表
+```sql
+USE message_db;
+
+CREATE TABLE messages (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(200),
+    message TEXT NOT NULL,
+    ip VARCHAR(45),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+```
+4.后端数据库连接配置
+请打开后端主程序文件:backend/app.py，在 第 34 行和第 35 行，根据你的实际数据库配置修改以下内容
+user = "依据实际更改"
+password = "依据实际更改"
+
