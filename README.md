@@ -164,5 +164,4 @@ ollama create miniqce -f Modelfile
 
 至此，后端运行环境、数据库以及 MiniQCE 模型的基础配置已完成。
 
-```
 
