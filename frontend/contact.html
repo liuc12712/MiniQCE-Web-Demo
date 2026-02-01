@@ -332,7 +332,7 @@ function sendEmailEvent() {
     return;
   }
 
-  fetch("http://api.liucelab.cn/message", {
+  fetch("http://127.0.0.1:5000/message", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
