@@ -9,8 +9,6 @@
 
 
 ![电脑端主页展示](images/电脑端主页展示.png)
-![手机端主页展示](images/手机端主页.png)
-![手机端栏目选择展示](images/手机端栏目选择展示.png)
 ![留言系统](images/电脑端留言展示.png)
 ![MiniQCE互动展示](images/电脑端MiniQCE互动展示.png)
 
