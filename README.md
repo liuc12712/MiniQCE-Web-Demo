@@ -127,7 +127,7 @@ password = "依据实际更改"
 MiniQCE 模型已计划开源至 Hugging Face，模型文件及对应的 `Modelfile` 将一并提供。
 
 > 模型下载地址：
-> 👉 敬请期待
+> https://huggingface.co/liuc12712/MiniQCE
 
 请下载完成后，将模型文件放置到合适的本地目录。
 
